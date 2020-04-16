@@ -1,0 +1,26 @@
+<gen author="wujw"><!-- 源码里的作者名称 -->
+	
+	<!-- 需要正确填写包名和类名!! -->
+	<!-- 若实体类为UserScoreDO 这里只需写UserScore -->
+	<obj pkg="com.youzan.cloud.fila.member.center" className="User">
+	
+	    <!--生成方式，1-代表从sql语句生成-->
+		<genType>1</genType>
+		
+		<!-- sql文件路径-->
+		<sqlFilePath>/com/codegen/sqlsource.sql</sqlFilePath>
+		
+		<!--表的中文名，也是生成的pojo的中文名 -->
+		<description>首页积分商城表</description>
+		
+		<!-- 业务联合主键字段名，非物理主键；通过业务主键也可以判定数据的唯一性-->
+		<bizKeys></bizKeys>
+
+
+		<outputType>11011000001111</outputType>
+		
+		<!-- 生成的工程的输出路径 -->
+		<outPath>/Users/liuliang/Documents/demo</outPath>
+		
+	</obj>
+</gen>

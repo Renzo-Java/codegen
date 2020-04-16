@@ -1,0 +1,20 @@
+04-16 09:46:41.666 ERROR [main] SqlFileReadHelper.readSql:45: 找不到脚本文件路径: {}
+java.lang.NullPointerException
+	at java.io.Reader.<init>(Reader.java:78) ~[?:1.8.0_181]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[?:1.8.0_181]
+	at com.codegen.source.sqlfile.SqlFileReadHelper.readSql(SqlFileReadHelper.java:38) [classes/:?]
+	at com.codegen.source.sqlfile.ObjSqlFactory.getObj(ObjSqlFactory.java:46) [classes/:?]
+	at com.codegen.util.ObjHelper.genObj(ObjHelper.java:54) [classes/:?]
+	at com.codegen.util.ObjHelper.write(ObjHelper.java:37) [classes/:?]
+	at com.codegen.CodeGen.startGenCode(CodeGen.java:56) [classes/:?]
+	at com.codegen.CodeGen.main(CodeGen.java:41) [classes/:?]
+04-16 09:47:44.441 ERROR [main] SqlFileReadHelper.readSql:45: 找不到脚本文件路径: {}
+java.lang.NullPointerException
+	at java.io.Reader.<init>(Reader.java:78) ~[?:1.8.0_181]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[?:1.8.0_181]
+	at com.codegen.source.sqlfile.SqlFileReadHelper.readSql(SqlFileReadHelper.java:38) [classes/:?]
+	at com.codegen.source.sqlfile.ObjSqlFactory.getObj(ObjSqlFactory.java:46) [classes/:?]
+	at com.codegen.util.ObjHelper.genObj(ObjHelper.java:54) [classes/:?]
+	at com.codegen.util.ObjHelper.write(ObjHelper.java:37) [classes/:?]
+	at com.codegen.CodeGen.startGenCode(CodeGen.java:56) [classes/:?]
+	at com.codegen.CodeGen.main(CodeGen.java:41) [classes/:?]

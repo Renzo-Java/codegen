@@ -1,0 +1,68 @@
+03-04 19:28:21.821 WARN  [main] TemplParserUtils.getTemplateContent:73: 模块格式化出错 {}
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> obj.primaryKey  [in template "codedaotemplate.ftl" at line 34, column 26]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${obj.primaryKey?cap_first}  [in template "codedaotemplate.ftl" at line 34, column 24]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:479) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.EvalUtil.coerceModelToStringOrUnsupportedMarkup(EvalUtil.java:434) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Expression.evalAndCoerceToStringOrUnsupportedMarkup(Expression.java:141) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.BuiltInForString.getTargetString(BuiltInForString.java:34) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.BuiltInForString._eval(BuiltInForString.java:29) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Expression.eval(Expression.java:101) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.visit(Environment.java:331) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.visit(Environment.java:337) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.process(Environment.java:310) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.template.Template.process(Template.java:383) ~[freemarker-2.3.29.jar:2.3.29]
+	at com.codegen.freemarker.TemplParserUtils.getTemplateContent(TemplParserUtils.java:65) [classes/:?]
+	at com.codegen.util.FileWriteUtil.getContent(FileWriteUtil.java:55) [classes/:?]
+	at com.codegen.util.FileWriteUtil.writeFile(FileWriteUtil.java:37) [classes/:?]
+	at com.codegen.util.ObjHelper.writeFile(ObjHelper.java:59) [classes/:?]
+	at com.codegen.util.ObjHelper.write(ObjHelper.java:42) [classes/:?]
+	at com.codegen.CodeGen.startGenCode(CodeGen.java:56) [classes/:?]
+	at com.codegen.CodeGen.main(CodeGen.java:41) [classes/:?]
+03-04 19:29:05.189 WARN  [main] TemplParserUtils.getTemplateContent:73: 模块格式化出错 {}
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> obj.primaryKey  [in template "codedaotemplate.ftl" at line 34, column 26]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${obj.primaryKey?cap_first}  [in template "codedaotemplate.ftl" at line 34, column 24]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:479) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.EvalUtil.coerceModelToStringOrUnsupportedMarkup(EvalUtil.java:434) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Expression.evalAndCoerceToStringOrUnsupportedMarkup(Expression.java:141) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.BuiltInForString.getTargetString(BuiltInForString.java:34) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.BuiltInForString._eval(BuiltInForString.java:29) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Expression.eval(Expression.java:101) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.visit(Environment.java:331) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.visit(Environment.java:337) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.core.Environment.process(Environment.java:310) ~[freemarker-2.3.29.jar:2.3.29]
+	at freemarker.template.Template.process(Template.java:383) ~[freemarker-2.3.29.jar:2.3.29]
+	at com.codegen.freemarker.TemplParserUtils.getTemplateContent(TemplParserUtils.java:65) [classes/:?]
+	at com.codegen.util.FileWriteUtil.getContent(FileWriteUtil.java:55) [classes/:?]
+	at com.codegen.util.FileWriteUtil.writeFile(FileWriteUtil.java:37) [classes/:?]
+	at com.codegen.util.ObjHelper.writeFile(ObjHelper.java:59) [classes/:?]
+	at com.codegen.util.ObjHelper.write(ObjHelper.java:42) [classes/:?]
+	at com.codegen.CodeGen.startGenCode(CodeGen.java:56) [classes/:?]
+	at com.codegen.CodeGen.main(CodeGen.java:41) [classes/:?]
